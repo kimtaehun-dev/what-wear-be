@@ -5,3 +5,16 @@ services:
       POSTGRES_DB: what_to_wear
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+
+# docker compose up -d : 도커 컨테이너 실행(터미널을 점유하지 않고 실행)
+# docker images : 도커 이미지 목록 확인
+# docker compose ps -a : 실행중인 도커 컨테이너 확인 ( a 옵션 실행/종료된 것 포함 컨테이너 목록)
+# docker compose down : 도커 컨테이너 중지
+
+# 도커 이미지로 도커 컨테이너를 생성
+
+
+#docker compose exec db psql -U postgres -d what_to_wear
